@@ -20,14 +20,17 @@ class NoteItem extends StatelessWidget {
             ),
             subtitle: Padding(
               padding: const EdgeInsets.only(top: 16, bottom: 16),
-              child: Text('build your project with Ahmad Tayasna',
+              child: Text('Build your project with Ahmad Tayasna',
                   style: TextStyle(
-                      color: Colors.black.withOpacity(0.5), fontSize: 18)),
+                      color: Colors.black.withOpacity(0.5), fontSize: 16)),
             ),
-            trailing: const Icon(
-              Icons.delete,
-              color: Colors.black,
-              size: 34,
+            trailing: const Padding(
+              padding: EdgeInsets.only(bottom: 5),
+              child: Icon(
+                Icons.delete,
+                color: Colors.black,
+                size: 36,
+              ),
             ),
           ),
           Padding(
