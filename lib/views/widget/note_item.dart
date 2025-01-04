@@ -15,7 +15,7 @@ class NoteItem extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.only(top: 24, bottom: 24, left: 16),
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(16), color:  Color(note.color)),
+            borderRadius: BorderRadius.circular(16), color: Color(note.color)),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
@@ -30,12 +30,17 @@ class NoteItem extends StatelessWidget {
                     style: TextStyle(
                         color: Colors.black.withOpacity(0.5), fontSize: 16)),
               ),
-              trailing: const Padding(
-                padding: EdgeInsets.only(bottom: 5),
-                child: Icon(
-                  Icons.delete,
-                  color: Colors.black,
-                  size: 36,
+              trailing: Padding(
+                padding: const EdgeInsets.only(bottom: 5),
+                child: IconButton(
+                  onPressed: () {
+                    note.delete();
+                  },
+                  icon: const Icon(
+                    Icons.delete,
+                    size: 36,
+                    color: Colors.black,
+                  ),
                 ),
               ),
             ),
