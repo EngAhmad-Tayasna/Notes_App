@@ -5,7 +5,7 @@ import 'package:notes_app/constants.dart';
 import 'package:notes_app/cubits/notes/notes_cubit.dart';
 import 'package:notes_app/models/note_model.dart';
 import 'package:notes_app/simple_bloc_observer.dart';
-import 'package:notes_app/views/notes_view.dart';
+import 'package:notes_app/views/screen_splash_notes.dart';
 
 void main() async {
   await Hive.initFlutter();
@@ -25,7 +25,7 @@ class NotesApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         theme: ThemeData(brightness: Brightness.dark, fontFamily: 'Poppins'),
-        home: const NotesView(),
+        home: const ScreenSplashNotes(),
       ),
     );
   }
