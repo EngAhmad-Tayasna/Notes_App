@@ -1,0 +1,1 @@
+C:\Users\NewTech\AndroidStudioProjects\notes_app\build\app\intermediates\cxx\Debug\6n93io3t\obj\arm64-v8a
